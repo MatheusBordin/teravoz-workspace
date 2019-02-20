@@ -1,0 +1,29 @@
+version: "2"
+services:
+  api:
+    container_name: teravoz-api
+    restart: always
+    build: ./teravoz-api
+    ports:
+      - "4000:4000"
+    links:
+      - mongo
+  mock:
+    container_name: teravoz-mock
+    restart: always
+    build: ./teravoz-mock
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+  front:
+    container_name: teravoz-front
+    restart: always
+    build: ./teravoz-front
+    ports:
+      - "8080:8080"
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - "27017:27017"
