@@ -17,3 +17,7 @@ Projeto no ar, abra `http://localhost:8080/`.
 
 ## Documentação
 A documentação de cada projeto se encontra em seus respectivos repositórios.
+
+[API](https://github.com/MatheusBordin/teravoz-api)
+[Front](https://github.com/MatheusBordin/teravoz-front)
+[Mock](https://github.com/MatheusBordin/teravoz-mock)
